@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroModule } from './cadastro/cadastro.module';
-import { EditorModule } from 'primeng/editor';
 
 @NgModule({
   declarations: [
@@ -14,7 +13,6 @@ import { EditorModule } from 'primeng/editor';
     BrowserModule,
     AppRoutingModule,
     CadastroModule,
-    EditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
