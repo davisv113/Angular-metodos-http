@@ -1,0 +1,26 @@
+<table [formGroup]="form">
+  <thead>
+    <tr>
+      <th>Login</th>
+      <th>Email</th>
+      <th>Senha</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let dado of dados; let i = index" >
+    <tr>
+      <td><p *ngIf="!editMode">{{dado.nome}}</p> <input type="text" formControlName="nome" *ngIf="editMode"></td>
+      <td><p *ngIf="!editMode">{{dado.email}}</p> <input type="text" formControlName="email" *ngIf="editMode"></td>
+      <td><p *ngIf="!editMode">{{dado.senha}}</p> <input type="text" formControlName="senha" *ngIf="editMode"></td>
+      <td>
+        <button *ngIf="!editMode" (click)="editFunc()">Editar</button>
+        <button *ngIf="editMode"(click)="editarUsuario(dado)">Salvar</button>
+        <button (click)="excluirUsuario(dado.id)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<p-editor [(ngModel)]="text" [style]="{ height: '320px' }"></p-editor>

@@ -1,0 +1,46 @@
+{
+  "cadastro": [
+    {
+      "nome": "",
+      "email": "",
+      "senha": "",
+      "id": 1
+    },
+    {
+      "nome": "papa",
+      "email": "teste@testeemail.com",
+      "senha": "papa123456",
+      "id": 3
+    },
+    {
+      "nome": "lauro",
+      "email": "ola@email.com",
+      "senha": "lauro123",
+      "id": 4
+    },
+    {
+      "nome": "NovoNome",
+      "email": "NovoEmail",
+      "senha": "NovaSenha",
+      "id": 5
+    },
+    {
+      "nome": "NovoNome",
+      "email": "NovoEmail",
+      "senha": "NovaSenha",
+      "id": 6
+    },
+    {
+      "nome": "NovoNome",
+      "email": "NovoEmail",
+      "senha": "NovaSenha",
+      "id": 7
+    },
+    {
+      "nome": "NovoNome",
+      "email": "NovoEmail",
+      "senha": "NovaSenha",
+      "id": 8
+    }
+  ]
+}

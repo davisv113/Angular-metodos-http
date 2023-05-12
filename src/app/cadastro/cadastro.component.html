@@ -1,0 +1,37 @@
+<div class="container" >
+  <a class="links" id="paracadastro"></a>
+  <a class="links" id="paralogin"></a>
+
+  <div class="content">
+
+    <div id="cadastro">
+      <form [formGroup]="form">
+        <h1>Cadastro</h1>
+
+        <p>
+          <label for="nome_cad">Seu nome</label>
+          <input id="nome_cad" name="nome_cad" type="text" placeholder="Luiz Augusto" formControlName="nome"/>
+        </p>
+
+        <p>
+          <label for="email_cad">Seu e-mail</label>
+          <input id="email_cad" name="email_cad"  type="email" placeholder="contato@htmlecsspro.com" formControlName="email"/>
+        </p>
+
+        <p>
+          <label for="senha_cad">Sua senha</label>
+          <input id="senha_cad" name="senha_cad"  type="password" placeholder="1234" formControlName="senha"/>
+        </p>
+
+
+          <input type="button" [disabled]="!form.valid" value="Cadastrar" (click)="onSubmit()"/>
+
+
+        <p class="link">
+          Já tem conta?
+          <a routerLink=""> Ir para Login </a>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
